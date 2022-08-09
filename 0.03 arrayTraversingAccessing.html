@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array traversing and accessing</title>
+    <script>
+        // array itterate or teaverse 
+        let data=[45,65,33,21,20,0,11];
+        // for(let i=0;i<data.length;i++){
+        //     console.log(`index is ${i} and value is ${data[i]}`);
+        // }
+
+        // let x=3;
+        //document.write("value of index 4 :: ",data[3]);
+        function getElement(){
+            let el=document.getElementById("element").value;
+            if(el<data.length && typeof parseInt(el)=== "number"){
+                alert(data[el]);
+            }else{
+                alert("Data not available");
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="element" />
+    <button onclick="getElement()">Get Element</button>
+    
+</body>
+</html>
